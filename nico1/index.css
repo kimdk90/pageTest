@@ -13,42 +13,96 @@
     z-index: -1;
 }
 
-/* 날씨 */
-#weather{
-    position: absolute;
-    top: 10px;
-    right: 10px;
+/* 메인div */
+#div_main{
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;     
+    height: 600px;
+    border: solid;
+    border-radius: 10px/ 10px;
 }
 
-/* 명언 */
-#quote{
+/* div */
+#div_main div{
+    border: solid;
+    border-radius: 10px/ 10px;
+}
+
+/* 이름 입력 */
+#login{
     position: absolute;
+    top:0%;
+    left: 0%;
+    right: 0%;
+    bottom: 90%;
+}
+
+/* 리스트 */
+#todo {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    right: 0%;
     bottom: 10%;
-    font-size: 30px;
+}
+/* 명언 */
+
+#quote{ 
+    position: absolute;
+    bottom: 0%;
+    left:  0%;
+    right: 0%;
+    top : 90%;
+    font-size: 25px;
+}
+#quote span:first-child {
+    position: absolute;
     width: 100%;
+    top : 0%;
     text-align: center;
-    color: white;
+}
+
+#quote span:last-child {
+    position: absolute;
+    width: 100%;
+    bottom : 0%;
+    text-align: center;
+}
+
+/* 날씨 */
+
+#weather{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    right: 85%;
+    bottom: 10%;
 }
 
 /* 시계 */
+
 #clock {
     position: absolute;
-    top:15%;
-    height: 120px;
-    width: 100%;
+    top:30%;
+    left: 0%;
+    right: 0%;
+    bottom: 50%;
     text-align: center;
 }
 
 /* 요일 */
+
 #clock span:first-child{
     position: absolute;
     top: 0%;
-    color: white;
     font-size: 40px;
     left: 39%;
 }
 
 /* 시간 */
+
 #clock span:nth-child(2){
     position: absolute;
     font-size: 50px;
@@ -63,4 +117,3 @@
     bottom: 17%;
     left: 55%;
 }
-
